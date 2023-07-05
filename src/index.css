@@ -1,5 +1,25 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply text-[#2b353e]
+}
+.btn {
+    @apply text-base py-4 px-4 rounded-none h-16 align-middle
+}
+
+.btn.btn-primary {
+    @apply hover:bg-white hover:border-girlcode-pink text-white bg-girlcode-pink
+      text-ellipsis border-2 border-solid whitespace-nowrap hover:text-girlcode-pink m-4
+}
+
+.card {
+    @apply rounded-none bg-white bg-clip-border relative p-0 mb-4
+    w-full text-left font-normal
+}
+
+.brd {
+    @apply border-2 border-solid border-[#e3e3e3]
+}

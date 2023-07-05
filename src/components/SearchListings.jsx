@@ -3,21 +3,25 @@ import React from 'react'
 const SearchListings = () => {
   return (
     <div>
-      <div className='flex'>
-        <h2>REFINE YOUR SEARCH</h2>
-        <h3>CLEAR FILTERS</h3>
-        <hr />
+      <div className='flex justify-between'>
+        <div className='mt-0 pr-4 w-full '>
+          <h1 className='text-left text-lg leading-5 font-medium'>REFINE YOUR SEARCH</h1>
+        </div>
+        <div className=''>
+          <a className='text-right pl-4 w-full' href='#'>CLEAR FILTERS</a>
+        </div>
       </div>
+      <hr />
       <div>
-        <button>APPLY FILTERS</button>
+        <button className='btn btn-primary'>APPLY FILTERS</button>
       </div>
       <div>
         <select name="" id="">
           <option value="">Johannesburg</option>
         </select>
       </div>
-      <div>
-        <h4>Remote Jobs</h4>
+      <div className='brd'>
+        <h4 className='leading-8 py-4 px-4'>Remote Jobs</h4>
         <hr />
         <ul>
           <li>Include Remote Jobs</li>
@@ -25,7 +29,7 @@ const SearchListings = () => {
           <li>Exclude Remote Jobs</li>
         </ul>
       </div>
-      <div>
+      <div className='brd'>
         <h4>Minimum salary per month</h4>
         <hr />
         <ul>
@@ -37,11 +41,12 @@ const SearchListings = () => {
           <li>Market Related</li>
         </ul>
       </div>
-      <div>
+      <div className='brd'>
         <h4>Sectors (Maximum 2)</h4>
-        <div className=''>
+        <hr />
+        <div>
           <div>
-            <input type="checkbox" name="Academic" id="" /><span>Aacademic</span>
+            <input type="checkbox" name="Academic" id="" /><span>Academic</span>
           </div>
           <div>
             <input type="checkbox" name="Environmental" id="" /><span>Environmental</span>
@@ -60,25 +65,25 @@ const SearchListings = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className='brd'>
       <select name="" id="">
         <option value="">Date Posted: Any</option>
       </select>
       </div>
-      <div>
+      <div className='brd'>
       <select name="" id="">
         <option value="">Contract Type: Any</option>
       </select>
       </div>
-      <div>
+      <div className='brd'>
       <select name="" id="">
         <option value="">EE/AA: Any</option>
       </select>
       </div>
-      <div>
+      <div className='brd'>
         <input type="checkbox" name="" id="" /><span>Disabled Positions Only</span>
       </div>
-      <a className='bg-girlcode-pink'>APPLY FILTERS</a>
+      <button className='btn btn-primary'>APPLY FILTERS</button>
     </div>
   )
 }

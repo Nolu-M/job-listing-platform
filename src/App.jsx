@@ -1,12 +1,13 @@
 import './App.css'
-import JobListings from './components/JobListings'
-import SearchListings from './components/SearchListings'
+import JobListingsInfo from './components/JobListingsInfo'
+
+
 
 
 function App() {
   return (
     <>
-      <SearchListings/>
+      <JobListingsInfo/>
       
     </>
   )
