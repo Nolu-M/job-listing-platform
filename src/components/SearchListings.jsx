@@ -2,18 +2,18 @@ import React from 'react'
 
 const SearchListings = () => {
   return (
-    <div>
-      <div className='flex justify-between'>
-        <div className='mt-0 pr-4 w-full '>
+    <div className='p-6 brd w-full'>
+      <div className='flex justify-between p-4'>
+        <div className='mt-0 p-4 w-full'>
           <h1 className='text-left text-lg leading-5 font-medium'>REFINE YOUR SEARCH</h1>
         </div>
         <div className=''>
-          <a className='text-right pl-4 w-full' href='#'>CLEAR FILTERS</a>
+          <a className='text-right' href='#'>CLEAR FILTERS</a>
         </div>
       </div>
       <hr />
-      <div>
-        <button className='btn btn-primary'>APPLY FILTERS</button>
+      <div className=''>
+        <button className='btn btn-primary w-full'>APPLY FILTERS</button>
       </div>
       <div>
         <select name="" id="">
@@ -83,7 +83,7 @@ const SearchListings = () => {
       <div className='brd'>
         <input type="checkbox" name="" id="" /><span>Disabled Positions Only</span>
       </div>
-      <button className='btn btn-primary'>APPLY FILTERS</button>
+      <button className='btn btn-primary w-full'>APPLY FILTERS</button>
     </div>
   )
 }

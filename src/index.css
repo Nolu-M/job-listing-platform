@@ -4,7 +4,8 @@
 @tailwind utilities;
 
 body {
-    @apply text-[#2b353e]
+    @apply text-[#2b353e] 
+
 }
 .btn {
     @apply text-base py-4 px-4 rounded-none h-16 align-middle
@@ -12,7 +13,7 @@ body {
 
 .btn.btn-primary {
     @apply hover:bg-white hover:border-girlcode-pink text-white bg-girlcode-pink
-      text-ellipsis border-2 border-solid whitespace-nowrap hover:text-girlcode-pink m-4
+      text-ellipsis border-2 border-solid whitespace-nowrap hover:text-girlcode-pink  
 }
 
 .card {
