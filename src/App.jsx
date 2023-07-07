@@ -8,7 +8,7 @@ import JobListings from './pages/JobListings'
 function App() {
   return (
     <>
-      <JobListings/>    
+      <JobListings/>   
     </>
   )
 }

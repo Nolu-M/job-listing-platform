@@ -23,7 +23,7 @@ const JobListingsInfo = () => {
             <button className='btn btn-primary w-5/12'>CREATE AN EMAIL ALERT</button>
           </div>
             <div className=''>
-              <div className='brd'>
+              <div className='brd px-4'>
                 <h3>Junior Software Developer</h3>
                 <ul>
                   <li>Eastern Cape</li>

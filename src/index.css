@@ -24,3 +24,7 @@ body {
 .brd {
     @apply border-2 border-solid border-[#e3e3e3]
 }
+
+.btn-secondary {
+    @apply border-2 hover:border-girlcode-pink w-full
+}

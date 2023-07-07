@@ -11,40 +11,51 @@ const SearchListings = () => {
           <a className='text-right' href='#'>CLEAR FILTERS</a>
         </div>
       </div>
-      <hr />
+      <hr className='mb-4'/>
       <div className=''>
-        <button className='btn btn-primary w-full'>APPLY FILTERS</button>
+        <button className='btn btn-primary w-full mb-4'>APPLY FILTERS</button>
       </div>
-      <div>
-        <select name="" id="">
+      <div className='mb-4'>
+        <select name="" id="" className='btn btn-secondary'>
           <option value="">Johannesburg</option>
         </select>
       </div>
-      <div className='brd'>
-        <h4 className='leading-8 py-4 px-4'>Remote Jobs</h4>
+      <div className='brd mb-4'>
+        <h4 className='leading-10 p-4'>Remote Jobs</h4>
         <hr />
-        <ul>
+        <ul className='p-4 leading-10'>
           <li>Include Remote Jobs</li>
           <li>Show Remote Jobs Only</li>
           <li>Exclude Remote Jobs</li>
         </ul>
       </div>
-      <div className='brd'>
-        <h4>Minimum salary per month</h4>
+      <div className='brd mb-4'>
+        <h4 className='leading-10 p-4'>Minimum salary per month</h4>
         <hr />
-        <ul>
-          <li>Any</li>
-          <li>R12000 (1129)</li>
-          <li>R24000</li>
-          <li>R36000</li>
-          <li>R48000</li>
-          <li>Market Related</li>
-        </ul>
+        <div className='p-4 leading-10'>
+          <div>
+            <input type='radio'></input>
+            <label>Any</label>
+          </div>
+          <div>
+            <input type='radio'></input>
+            <label>Any</label>
+          </div>
+          <div>
+            <input type='radio'></input>
+            <label>Any</label>
+          </div>
+          <div>
+            <input type='radio'></input>
+            <label>Any</label>
+          </div>
+          
+        </div>
       </div>
-      <div className='brd'>
-        <h4>Sectors (Maximum 2)</h4>
+      <div className='brd mb-4'>
+        <h4 className='leading-10 p-4'>Sectors (Maximum 2)</h4>
         <hr />
-        <div>
+        <div className='leading-10 p-4 overflow-auto h-40'>
           <div>
             <input type="checkbox" name="Academic" id="" /><span>Academic</span>
           </div>
@@ -63,25 +74,34 @@ const SearchListings = () => {
           <div>
             <input type="checkbox" name="Construction" id="" /><span>Construction</span>
           </div>
+          <div>
+            <input type="checkbox" name="Construction" id="" /><span>Construction</span>
+          </div>
+          <div>
+            <input type="checkbox" name="Construction" id="" /><span>Construction</span>
+          </div>
         </div>
       </div>
-      <div className='brd'>
-      <select name="" id="">
+      <div className='brd mb-4'>
+      <select name="" id="" className='btn btn-secondary'>
         <option value="">Date Posted: Any</option>
       </select>
       </div>
-      <div className='brd'>
-      <select name="" id="">
+      <div className='brd mb-4'>
+      <select name="" id="" className='btn btn-secondary'>
         <option value="">Contract Type: Any</option>
       </select>
       </div>
-      <div className='brd'>
-      <select name="" id="">
+      <div className='brd mb-4'>
+      <select name="" id="" className='btn btn-secondary '>
         <option value="">EE/AA: Any</option>
       </select>
       </div>
-      <div className='brd'>
-        <input type="checkbox" name="" id="" /><span>Disabled Positions Only</span>
+      <div className='mb-4'>
+        <label htmlFor="Disabled-positions">
+        <input type="checkbox" name="disabled-positions" id=""/> Disabled Positions Only
+        <span></span>
+        </label>
       </div>
       <button className='btn btn-primary w-full'>APPLY FILTERS</button>
     </div>
