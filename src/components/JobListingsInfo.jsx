@@ -1,10 +1,14 @@
-import React from 'react'
-import SearchListings from './SearchListings'
+import React, { useState} from 'react'
+import JobCard from './JobCard'
+import EmailPopup from './EmailPopup'
 
 
 
 
 const JobListingsInfo = () => {
+
+const [buttonPopup, setButtonPopup] = useState(false);
+
   return (
       <div className='w-6/12 brd'>
         <div className=' relative p-4'>
@@ -20,23 +24,11 @@ const JobListingsInfo = () => {
         <hr />
           <div className='flex justify-between m-4'>
             <h3>28 Junior Software Developer Jobs in South Africa</h3>
-            <button className='btn btn-primary w-5/12'>CREATE AN EMAIL ALERT</button>
+            <button className='btn btn-primary w-5/12' onClick={() => setButtonPopup(true)}>CREATE AN EMAIL ALERT</button>
+            <EmailPopup trigger={buttonPopup} setTrigger={setButtonPopup}>
+            </EmailPopup>
           </div>
-            <div className=''>
-              <div className='brd px-4'>
-                <h3>Junior Software Developer</h3>
-                <ul>
-                  <li>Eastern Cape</li>
-                  <li>Job Type: Temporary</li>
-                  <li>Posted: 27 June 2023</li>
-                  <li>25 Days left</li>
-                </ul>
-                <div className='flex justify-end'>
-                <a href=""><span className="material-symbols-outlined">mail</span></a>
-                <a href=""><span className="material-symbols-outlined">favorite</span></a>
-                </div>
-              </div>
-            </div>
+            <JobCard/>
         </div>
       </div>
   )

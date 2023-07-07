@@ -32,21 +32,21 @@ const SearchListings = () => {
       <div className='brd mb-4'>
         <h4 className='leading-10 p-4'>Minimum salary per month</h4>
         <hr />
-        <div className='p-4 leading-10'>
+        <div className='leading-10 p-4'>
           <div>
-            <input type='radio'></input>
+            <input type='radio'/>
             <label>Any</label>
           </div>
           <div>
-            <input type='radio'></input>
+            <input type='radio'/>
             <label>Any</label>
           </div>
           <div>
-            <input type='radio'></input>
+            <input type='radio'/>
             <label>Any</label>
           </div>
           <div>
-            <input type='radio'></input>
+            <input type='radio'/>
             <label>Any</label>
           </div>
           
@@ -57,28 +57,28 @@ const SearchListings = () => {
         <hr />
         <div className='leading-10 p-4 overflow-auto h-40'>
           <div>
-            <input type="checkbox" name="Academic" id="" /><span>Academic</span>
+            <input type="checkbox" name="Academic" id="" /><span> Academic</span>
           </div>
           <div>
-            <input type="checkbox" name="Environmental" id="" /><span>Environmental</span>
+            <input type="checkbox" name="Environmental" id="" /><span> Environmental</span>
           </div>
           <div>
-            <input type="checkbox" name="Accounting" id="" /><span>Accounting</span>
+            <input type="checkbox" name="Accounting" id="" /><span> Accounting</span>
           </div>
           <div>
-            <input type="checkbox" name="Engineering" id="" /><span>Engineering</span>
+            <input type="checkbox" name="Engineering" id="" /><span> Engineering</span>
           </div>
           <div>
-            <input type="checkbox" name="Fashion" id="" /><span>Fashion</span>
+            <input type="checkbox" name="Fashion" id="" /><span> Fashion</span>
           </div>
           <div>
-            <input type="checkbox" name="Construction" id="" /><span>Construction</span>
+            <input type="checkbox" name="Construction" id="" /><span> Construction</span>
           </div>
           <div>
-            <input type="checkbox" name="Construction" id="" /><span>Construction</span>
+            <input type="checkbox" name="Construction" id="" /><span> Construction</span>
           </div>
           <div>
-            <input type="checkbox" name="Construction" id="" /><span>Construction</span>
+            <input type="checkbox" name="Construction" id="" /><span> Construction</span>
           </div>
         </div>
       </div>
