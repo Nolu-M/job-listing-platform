@@ -26,5 +26,5 @@ body {
 }
 
 .btn-secondary {
-    @apply border-2 hover:border-girlcode-pink w-full
+    @apply border-2 hover:border-girlcode-pink
 }

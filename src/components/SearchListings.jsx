@@ -8,7 +8,7 @@ const SearchListings = () => {
           <h1 className='text-left text-lg leading-5 font-medium'>REFINE YOUR SEARCH</h1>
         </div>
         <div className=''>
-          <a className='text-right' href='#'>CLEAR FILTERS</a>
+          <a className='text-right text-girlcode-pink' href='#'>CLEAR FILTERS</a>
         </div>
       </div>
       <hr className='mb-4'/>
@@ -16,7 +16,7 @@ const SearchListings = () => {
         <button className='btn btn-primary w-full mb-4'>APPLY FILTERS</button>
       </div>
       <div className='mb-4'>
-        <select name="" id="" className='btn btn-secondary'>
+        <select name="" id="" className='btn btn-secondary w-full'>
           <option value="">Johannesburg</option>
         </select>
       </div>
@@ -83,17 +83,17 @@ const SearchListings = () => {
         </div>
       </div>
       <div className='brd mb-4'>
-      <select name="" id="" className='btn btn-secondary'>
+      <select name="" id="" className='btn btn-secondary w-full'>
         <option value="">Date Posted: Any</option>
       </select>
       </div>
       <div className='brd mb-4'>
-      <select name="" id="" className='btn btn-secondary'>
+      <select name="" id="" className='btn btn-secondary w-full'>
         <option value="">Contract Type: Any</option>
       </select>
       </div>
       <div className='brd mb-4'>
-      <select name="" id="" className='btn btn-secondary '>
+      <select name="" id="" className='btn btn-secondary w-full'>
         <option value="">EE/AA: Any</option>
       </select>
       </div>
