@@ -1,26 +1,15 @@
-import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import JobListings from './pages/JobListings'
-import JobDetails from './pages/JobDetails'
+import React from 'react';
+import JobListingForm from './components/JobListingForm';
 
 
 
-
-
-
-function App() {
+const App = () => {
   return (
-    <>
-    <Routes>
-      <Route path='/' element={<JobListings/>} />
-      <Route path='/jobs/advert' element={<JobDetails/>} />
-    </Routes>
-        
-        
-      
-  
-    </>
-  )
-}
+   <div>
+    <JobListingForm/>
+   </div>
+  );
+};
 
-export default App
+export default App;
