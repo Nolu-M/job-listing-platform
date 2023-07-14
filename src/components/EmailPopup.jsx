@@ -19,6 +19,8 @@ const EmailPopup = (props) => {
     const saveEmailAlert = (e) => {
         e.preventDefault();
 
+        const form = e.target
+
         const data = {
             job: emailAlert.job,
             province: emailAlert.province,
@@ -26,17 +28,16 @@ const EmailPopup = (props) => {
             email: emailAlert.email,
         }
 
-        axios.post(`${import.meta.env.VITE_API_URL}`, data)
-        .then(resp => {
-            alert(resp.data.message);
+        const formData = new formData(form)
+
+        fetch(`${import.meta.env.VITE_API_URL}/submit_checkout`, {
+            method: "POST",
+            body: formData
+        }).then(resp => {
+            console.log(resp)
+        }).catch (error => {
+            console.log(error)
         })
-        .catch(function (error) {
-            if(error.response) {
-                if(error.response.status === 422){
-                    setIn
-                }
-            }
-        });
   
     }
     
