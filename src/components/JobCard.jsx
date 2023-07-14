@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom'
 const JobCard = () => {
   return (
     <div className=''>
+      <Link to={'/form'} href='/form'>
+      Job listing form
+      </Link>
       <div className='brd px-4 leading-6'>
         <Link to={'/jobs/advert'} href='/jobs/advert'>
           <h2 className='font-bold hover:text-girlcode-pink mt-4 mb-4'>Junior Software Developer</h2>

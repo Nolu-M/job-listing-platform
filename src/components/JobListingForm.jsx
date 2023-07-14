@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './JobListingForm.css';
+import React, { useState } from 'react'
+
 
 const JobListingForm = () => {
   const [title, setTitle] = useState('');
