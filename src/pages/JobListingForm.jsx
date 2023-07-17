@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import MainLayout from '../Layouts/MainLayout';
 
 
 const JobListingForm = () => {
@@ -21,6 +22,7 @@ const JobListingForm = () => {
     }
 
   return (
+    <MainLayout>
     <div className="container">
       <h1 className="text-2xl font-bold mb-4">Add Jobs</h1>
       <h2 className="text-s font-bold mb-2">Please fill out the form below, all fields marked with an asterisk(*) must be filled.</h2>
@@ -99,7 +101,8 @@ const JobListingForm = () => {
         </button>
       </form>
     </div>
-  );
-};
+    </MainLayout>
+  )
+}
 
 export default JobListingForm;

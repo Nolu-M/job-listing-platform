@@ -9,12 +9,11 @@ function Home() {
       <header>
         <nav>
           <p>
-            <a><Link to="/job-search">Job Search |    </Link></a>
-            <a><Link to="/companies">Add Jobs |     </Link></a>    
+            <Link to="/job-search">Job Search |</Link>
+            <Link to="/companies">Add Jobs |</Link>  
           </p>
         </nav>
       </header>
-
       <section className='heading'>
       <div>
       <h2 id="heading">Find your dream career</h2>
@@ -25,13 +24,11 @@ function Home() {
       </form>
     </div>
       </section>
-
       <section id="banner">
         <h1>Welcome to GirlCodeCareers</h1>
         <p>Find your dream job today</p>
         <Link to="/get-started" className="cta-button">Get Started</Link>
       </section>
-
       <footer>
         <p>&copy; 2023 Careers24. All rights reserved.</p>
       </footer>

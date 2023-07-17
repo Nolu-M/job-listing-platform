@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import JobCard from '../components/JobCard'
+import MainLayout from '../Layouts/MainLayout'
 
 
 const Information = () => {
 
   return (
-
+    <MainLayout>
     <div className='container mx-auto'>
       <div className='flex justify-center'>
       advert
@@ -67,6 +68,7 @@ const Information = () => {
           </div>
         </div>
     </div>
+    </MainLayout>
   )
 }
 

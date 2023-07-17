@@ -2,6 +2,7 @@ import SearchListings from '../components/SearchListings'
 import React, { useState} from 'react'
 import JobCard from '../components/JobCard'
 import EmailPopup from '../components/EmailPopup'
+import MainLayout from '../Layouts/MainLayout'
 
 
 
@@ -9,6 +10,7 @@ const JobListings = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
 
   return (
+    <MainLayout>
       <div className='container mx-auto'>
         <div className='flex justify-center'>
           Advert
@@ -42,6 +44,7 @@ const JobListings = () => {
           </div>
         </div>
       </div>
+    </MainLayout>
 
   )
 }
