@@ -11,10 +11,10 @@ function App() {
   return (
     <>
     <Routes>
+      <Route path='/' element={<Home />} />
       <Route path='/job-search' element={<JobListings/>} />
       <Route path='/joblistings/jobTitle' element={<JobDetails/>} />
       <Route path='/companies' element={<JobListingForm/>} />
-      <Route path='/' element={<Home />} />
     </Routes>
         
         

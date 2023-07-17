@@ -33,10 +33,10 @@ const EmailPopup = (props) => {
             <p className='m-4'>Get notified by email as soon as new jobs are posted: </p>
             <form onSubmit={createEmailAlert} >
                 <div>
-                    <input type="text" placeholder='Enter the job Title' name='job' className='m-4 w-9/12 p-4 border-2 form-control' required/>
+                    <input type="text" placeholder='Enter the job Title' name='job' className='m-4 w-9/12 p-4 border-2' required/>
                 </div>
                 <div>
-                    <input type="text" placeholder='Enter the province' name='province' className='m-4 w-9/12 p-4 border-2 form-control' required/>
+                    <input type="text" placeholder='Enter the province' name='province' className='m-4 w-9/12 p-4 border-2' required/>
                 </div>
                 <div>
                     <input type="text" placeholder='Enter the city' name='city' className='m-4 w-9/12 p-4 border-2' required/>

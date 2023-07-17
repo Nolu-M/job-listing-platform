@@ -10,9 +10,6 @@ const Information = () => {
     <MainLayout>
     <div className='container mx-auto'>
       <div className='flex justify-center'>
-      advert
-      </div>
-      <div className='flex justify-center'>
         <div className='brd h-screen p-6 w-4/12'>
           <div className='w-full'>
           <JobCard/>
