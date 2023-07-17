@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom'
-import './App.css'
 import JobListings from './pages/JobListings'
 import JobDetails from './pages/JobDetails'
 import JobListingForm from './pages/JobListingForm'
@@ -13,7 +12,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/job-search' element={<JobListings/>} />
-      <Route path='/joblistings/jobTitle' element={<JobDetails/>} />
+      <Route path='/job-search/:jobSlug' element={<JobDetails/>} />
       <Route path='/companies' element={<JobListingForm/>} />
     </Routes>
         

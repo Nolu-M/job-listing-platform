@@ -14,7 +14,7 @@ function Home() {
           </p>
         </nav>
       </header>
-      <section className='heading'>
+      <section className={`bg-hero-section bg-center bg-cover w-full h-1/2 py-32`}>
       <div>
       <h2 id="heading">Find your dream career</h2>
       <form className='inputs'>
@@ -24,12 +24,12 @@ function Home() {
       </form>
     </div>
       </section>
-      <section id="banner">
+      <section className='bg-[#007bff] text-white'>
         <h1>Welcome to GirlCodeCareers</h1>
         <p>Find your dream job today</p>
         <Link to="/get-started" className="cta-button">Get Started</Link>
       </section>
-      <footer>
+      <footer className='bg-[#333] text-white'>
         <p>&copy; 2023 Careers24. All rights reserved.</p>
       </footer>
     </div>

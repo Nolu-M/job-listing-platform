@@ -11,7 +11,10 @@ export default {
       },
       colors: {
         'girlcode-pink': "#e94154"
-      }
+      },
+      backgroundImage: {
+        'hero-section': "url('/src/assets/back.jpg')",
+      },
     },
   },
   plugins: [],

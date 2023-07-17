@@ -13,10 +13,7 @@ const JobListings = () => {
     <MainLayout>
       <div className='container mx-auto'>
         <div className='flex justify-center'>
-          <div className=''>
-            
-          </div>
-          <div className='w-1/2 brd'>
+          <div className='w-9/12 brd h-screen'>
             <div className=' relative p-4'>
               <div className='flex justify-between'>
                 <h3>Jobs available</h3>

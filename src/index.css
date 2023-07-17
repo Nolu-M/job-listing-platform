@@ -12,8 +12,8 @@ body {
 }
 
 .btn.btn-primary {
-    @apply hover:bg-white hover:border-girlcode-pink text-white bg-girlcode-pink
-      text-ellipsis border-2 border-solid whitespace-nowrap hover:text-girlcode-pink  
+    @apply hover:bg-white hover:border-[#007bff] text-white bg-[#007bff]
+      text-ellipsis border-2 border-solid whitespace-nowrap hover:text-[#007bff]  
 }
 
 .card {
@@ -26,10 +26,10 @@ body {
 }
 
 .btn-secondary {
-    @apply border-2 hover:border-girlcode-pink
+    @apply border-2 hover:border-[#007bff]
 }
 
-body {
+/*body {
     margin: 0;
     background-color:whitesmoke;
     padding: 10px 0;
@@ -47,7 +47,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  
 }
 
 
@@ -205,4 +205,4 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
-}
+}*/

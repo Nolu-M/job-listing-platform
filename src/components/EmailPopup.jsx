@@ -23,7 +23,7 @@ const EmailPopup = (props) => {
 
   return (props.trigger) ? (
     
-    <div className='fixed h-9/12 w-9/12'>
+    <div className='fixed h-9/12 w-1/2'>
         <div className='relative mt-0 ml-0 bg-white border-2'>
             <div className='flex justify-between bg-slate-400 p-4 text-white'>
                 <p>Never miss another opportunity!</p>
