@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const TopBar = () => {
     return (
       <div>
-        <div className="bg-[#333]">
+        <div className="bg-[#333] text-white">
           <div>
          <a href="/Home" className="Home-icon-link">
          <img src="Home.ico" alt="Home" className="Home-icon" /> </a>
