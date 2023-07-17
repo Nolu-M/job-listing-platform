@@ -9,7 +9,7 @@ const JobCard = () => {
       Job listing form
       </Link>
       <div className='brd px-4 leading-6'>
-        <Link to={'/jobs/advert'} href='/jobs/advert'>
+        <Link to={'/joblistings/jobTitle'} href='/joblistings/jobTitle'>
           <h2 className='font-bold hover:text-girlcode-pink mt-4 mb-4'>Junior Software Developer</h2>
         </Link>
         <ul>

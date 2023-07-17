@@ -1,36 +1,15 @@
-import axios from 'axios'
-import React, { useState } from 'react'
 
 
 const EmailPopup = (props) => {
+    const createEmailAlert = (evt) => {
+        evt.preventDefault()
+    
+        const form = evt.target
 
-    const [emailAlert, setEmailAlert] = useState ({
-        job: '',
-        province: '',
-        city: '',
-        email: ''
-    })
+        const formData = new FormData(form)
 
-    const handleInput = (e) => {
-        e.persist();
-        setEmailAlert({...emailAlert, [e.target.name]: e.target.value });
-    }
-
-    const saveEmailAlert = (e) => {
-        e.preventDefault();
-
-        const form = e.target
-
-        const data = {
-            job: emailAlert.job,
-            province: emailAlert.province,
-            city: emailAlert.city,
-            email: emailAlert.email,
-        }
-
-        const formData = new formData(form)
-
-        fetch(`${import.meta.env.VITE_API_URL}/submit_checkout`, {
+    
+        fetch(`${import.meta.env.VITE_API_URL}/create_job_alert`, {
             method: "POST",
             body: formData
         }).then(resp => {
@@ -42,7 +21,6 @@ const EmailPopup = (props) => {
     }
     
 
-
   return (props.trigger) ? (
     
     <div className='fixed h-9/12 w-9/12'>
@@ -53,24 +31,23 @@ const EmailPopup = (props) => {
                 { props.children }
             </div>
             <p className='m-4'>Get notified by email as soon as new jobs are posted: </p>
-            <form onSubmit={saveEmailAlert}>
+            <form onSubmit={createEmailAlert} >
                 <div>
-                    <input type="text" placeholder='Job Title' name='job' value={emailAlert.job} onChange={handleInput} className='m-4 w-9/12 p-4 border-2 form-control'/>
+                    <input type="text" placeholder='Enter the job Title' name='job' className='m-4 w-9/12 p-4 border-2 form-control' required/>
                 </div>
                 <div>
-                    <input type="text" placeholder='Province' name='province' value={emailAlert.province} onChange={handleInput} className='m-4 w-9/12 p-4 border-2 form-control'/>
+                    <input type="text" placeholder='Enter the province' name='province' className='m-4 w-9/12 p-4 border-2 form-control' required/>
                 </div>
                 <div>
-                    <input type="text" placeholder='City' name='city' value={emailAlert.city} onChange={handleInput} className='m-4 w-9/12 p-4 border-2'/>
+                    <input type="text" placeholder='Enter the city' name='city' className='m-4 w-9/12 p-4 border-2' required/>
                 </div>
                 <div>
-                    <input type="email" placeholder='Email Address' name='email' value={emailAlert.email} onChange={handleInput} className='m-4 w-9/12 p-4 border-2'/>
+                    <input type="email" placeholder='Enter your email address' name='email' className='m-4 w-9/12 p-4 border-2' required/>
                 </div>
                 <div className='bg-slate-200 flex justify-end'>
                     <button type="submit" className='btn btn-primary'>Create Job Alert</button>
                 </div>
             </form>
-            
         </div>
     </div>
   

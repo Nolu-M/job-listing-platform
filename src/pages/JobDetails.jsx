@@ -4,6 +4,7 @@ import JobCard from '../components/JobCard'
 
 
 const Information = () => {
+
   return (
 
     <div className='container mx-auto'>
@@ -19,7 +20,6 @@ const Information = () => {
           <div className='w-6/12 brd'>
             <div className='relative p-4'>
               <div className='flex justify-between'>
-                <p>Home</p>
                 <div className=''>
                   <Link to={'/'} href="jobs" className='hover:text-girlcode-pink'>Go back to search results</Link>
                 </div>
