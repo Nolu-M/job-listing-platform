@@ -41,7 +41,7 @@ const JobCard = () => {
       <div className='brd px-4 leading-6 mb-6'>
         { jobList.map(job => (
           <Link to={`/joblistings/${job.slug}`} key={job.id}>
-            <h2 className='font-bold hover:text-girlcode-pink mt-4 mb-4'>{job.title}</h2>
+            <h2 className='font-bold hover:text-[#007bff] mt-4 mb-4'>{job.title}</h2>
         </Link>
 
         ))}
@@ -58,7 +58,7 @@ const JobCard = () => {
       <div className='brd px-4 leading-6 mb-6'>
         { jobList.map(job => (
           <Link to={`/joblistings/${job.slug}`} key={job.id}>
-            <h2 className='font-bold hover:text-girlcode-pink mt-4 mb-4'>{job.name}</h2>
+            <h2 className='font-bold hover:text-[#007bff] mt-4 mb-4'>{job.name}</h2>
         </Link>
 
         ))}
