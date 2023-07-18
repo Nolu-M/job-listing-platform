@@ -1,35 +1,10 @@
-import React, { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import JobCard from '../components/JobCard'
 import MainLayout from '../Layouts/MainLayout'
 
 
 const Information = () => {
-
-  let { jobSlug } = useParams()
-  let [jobInfo, setJobInfo] = useState({})
-  const [jobsList, setJobsList] = useState({})
-  
-  useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/job-search/${jobSlug}`)
-        .then(resp => resp.json())
-        .then(resp => {
-            setJobInfo(resp)
-        })
-        .catch(error => {
-            console.log(error)
-        })
-
-    fetch(`${import.meta.env.VITE_API_URL}/job-search/${jobSlug}/jobs`)
-        .then(resp => resp.json())
-        .then(resp => {
-            setJobsList(resp.jobs)
-            console.log(resp)
-        })
-        .catch(error => {
-            console.log(error)
-        })
-}, [jobSlug])
 
 
   return (
@@ -45,7 +20,7 @@ const Information = () => {
             <div className='relative p-4'>
               <div className='flex justify-between'>
                 <div className=''>
-                  <Link to={'/job-search'} href="jobs" className='hover:text-girlcode-pink'>Go back to search results</Link>
+                  <Link to={'/job-search'} href="jobs" className='hover:text-[#007bff]'>Go back to search results</Link>
                 </div>
               </div>
               <div className='mt-6 leading-8'>

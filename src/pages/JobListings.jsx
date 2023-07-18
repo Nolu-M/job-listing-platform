@@ -1,4 +1,3 @@
-import SearchListings from '../components/SearchListings'
 import React, { useState} from 'react'
 import JobCard from '../components/JobCard'
 import EmailPopup from '../components/EmailPopup'
@@ -16,9 +15,9 @@ const JobListings = () => {
           <div className='w-9/12 brd h-screen'>
             <div className=' relative p-4'>
               <div className='flex justify-between'>
-                <h3>Jobs available</h3>
+                <h3 className='font-semibold'>Jobs available</h3>
                 <div className='mb-4'>
-                  <select name="Job-list-sort" id="Job-list-sort" className='btn border-2 hover:border-girlcode-pink'>
+                  <select name="Job-list-sort" id="Job-list-sort" className='btn border-2 hover:border-[#007bff]'>
                     <option value="Relevance">Relevance</option>
                     <option value="Date Posted">Date Posted</option>
                   </select>
@@ -26,7 +25,7 @@ const JobListings = () => {
               </div>
               <hr />
               <div className='flex justify-between mt-4 mb-4'>
-                <h3>Stay informed by creating a job alert</h3>
+                <h3 className='font-semibold'>Stay informed by creating a job alert</h3>
                 <div className='flex justify-end'>
                 <button className='btn btn-primary w-full' onClick={() => setButtonPopup(true)}>CREATE AN EMAIL ALERT</button>
                   <EmailPopup trigger={buttonPopup} setTrigger={setButtonPopup}>
