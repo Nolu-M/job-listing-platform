@@ -1,17 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import JobCard from '../components/JobCard'
 import MainLayout from '../Layouts/MainLayout'
 
 
 const Information = () => {
+  let { jobTitle } = useParams()
 
 
   return (
     <MainLayout>
+      JobDetails Page: {jobTitle}
     <div className='container mx-auto'>
       <div className='flex justify-center'>
-        <div className='brd h-screen p-6 w-4/12'>
+        <div className='brd h-full p-6 w-4/12'>
           <div className='w-full'>
           <JobCard/>
         </div> 

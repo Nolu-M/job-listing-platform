@@ -12,7 +12,7 @@ const JobListings = () => {
     <MainLayout>
       <div className='container mx-auto'>
         <div className='flex justify-center'>
-          <div className='w-9/12 brd h-screen'>
+          <div className='w-9/12 brd h-full'>
             <div className=' relative p-4'>
               <div className='flex justify-between'>
                 <h3 className='font-semibold'>Jobs available</h3>
@@ -27,7 +27,7 @@ const JobListings = () => {
               <div className='flex justify-between mt-4 mb-4'>
                 <h3 className='font-semibold'>Stay informed by creating a job alert</h3>
                 <div className='flex justify-end'>
-                <button className='btn btn-primary w-full' onClick={() => setButtonPopup(true)}>CREATE AN EMAIL ALERT</button>
+                  <button className='btn btn-primary w-full' onClick={() => setButtonPopup(true)}>CREATE AN EMAIL ALERT</button>
                   <EmailPopup trigger={buttonPopup} setTrigger={setButtonPopup}>
                     </EmailPopup>
                 </div>

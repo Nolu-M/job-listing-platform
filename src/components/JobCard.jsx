@@ -3,38 +3,53 @@ import { Link } from 'react-router-dom'
 
 
 const JobCard = () => {
+  const JobList = [
+    {
+      title: "Software engineer",
+      path: "/job-search/software-engineer"
+    },
+    {
+      title: "Backend engineer",
+      path: "/job-search/backend-engineer"
+    },
+    {
+      title: "Frontend engineer",
+      path: "/job-search/frontend-engineer"
+    },
+    {
+      title: "Cyber Security",
+      path: "/job-search/cyber-security"
+    },
+    {
+      title: "Fullstack engineer",
+      path: "/job-search/fullstack-engineer"
+    },
+    {
+      title: "Cloud engineer",
+      path: "/job-search/cloud-engineer"
+    }
+
+  ]
+
 
   return (
     <div className=''>
-      <div className='brd px-4 leading-6 mb-6'>
-          <Link to={'/job-search/job'}>
-            <h2 className='font-bold hover:text-[#007bff] mt-4 mb-4'>Python Developer</h2>
-        </Link>
-        <ul>      
-          <li>Eastern Cape</li>
-          <li>Job Type: Temporary</li>
-          <li>Posted: 27 June 2023</li>
-        </ul>
-        <div className='flex justify-end'>
-          <a href=""><span className="material-symbols-outlined">mail</span></a>
-          <a href=""><span className="material-symbols-outlined">favorite</span></a>
+      {JobList.map(job => (
+        <div className='brd px-4 leading-6 mb-6' key={job.title}>
+          <Link to={job.path}>
+            <h2 className='font-bold hover:text-[#007bff] mt-4 mb-4'>{job.title}</h2>
+          </Link>
+          <ul>      
+            <li>Eastern Cape</li>
+            <li>Job Type: Temporary</li>
+            <li>Posted: 27 June 2023</li>
+          </ul>
+          <div className='flex justify-end'>
+            <a href=""><span className="material-symbols-outlined">mail</span></a>
+            <a href=""><span className="material-symbols-outlined">favorite</span></a>
+          </div>
         </div>
-      </div>
-      <div className='brd px-4 leading-6 mb-6'>
-          <Link to={'/job-search/job'}>
-            <h2 className='font-bold hover:text-[#007bff] mt-4 mb-4'>Software engineer
-            </h2>
-        </Link>
-        <ul>      
-          <li>Western Cape</li>
-          <li>Job Type: Temporary</li>
-          <li>Posted: 27 June 2023</li>
-        </ul>
-        <div className='flex justify-end'>
-          <Link to={'/job-search/job'} href=""><span className="material-symbols-outlined">mail</span></Link>
-          <a href=""><span className="material-symbols-outlined">favorite</span></a>
-        </div>
-      </div>
+      )) }
     </div>
   )
 }
