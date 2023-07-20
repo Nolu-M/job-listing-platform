@@ -12,7 +12,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/job-search' element={<JobListings/>} />
-      <Route path='/job-search/:jobTitle' element={<JobDetails/>} />
+      <Route path='/job-search/:jobSlug' element={<JobDetails/>} />
       <Route path='/companies' element={<JobListingForm/>} />
     </Routes>
         

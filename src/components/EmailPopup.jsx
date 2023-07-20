@@ -25,7 +25,7 @@ const EmailPopup = (props) => {
     
     <div className='fixed h-9/12 w-1/2'>
         <div className='relative mt-0 ml-0 bg-white border-2'>
-            <div className='flex justify-between bg-slate-400 p-4 text-white'>
+            <div className='flex justify-between bg-[#007bff] p-4 text-white'>
                 <p>Never miss another opportunity!</p>
                 <button className='' onClick={() => props.setTrigger(false)}>X</button>
                 { props.children }
