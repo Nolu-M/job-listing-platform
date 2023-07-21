@@ -50,16 +50,15 @@ const Information = () => {
                     <li>{jobInfo.job_location}</li>
                     <li>R{jobInfo.salary}</li>
                   </ul>
-                  
-                  <button className='btn btn-primary w-full mb-4'>Apply</button>
+                  <button className='btn btn-primary w-full my-4'>Apply</button>
                     <hr />
                   <div className='mt-4 leading-8'>
-                    <h2 className='font-bold'>Vacancy Details</h2>
+                    <h2 className='font-bold mb-4'>Vacancy Details</h2>
                     {jobInfo.description}
                   </div>
                     <hr className='mt-4'/>
                   <div className='mt-4 mb-4 leading-8'>
-                    <h2 className='font-bold'>Candidate Requirements</h2>
+                    <h2 className='font-bold mb-4'>Candidate Requirements</h2>
                     {jobInfo.requirements}
                   </div>
                     <div className='flex justify-between mt-4 mb-4'>
@@ -68,7 +67,7 @@ const Information = () => {
                       <a href=""><span className="material-symbols-outlined">favorite</span></a>
                     </div>
                   </div>
-                    <button className='btn btn-primary w-full mb-4'>Apply</button>
+                    <button className='btn btn-primary w-full my-4'>Apply</button>
                   </div>
                 </div>
             </div>

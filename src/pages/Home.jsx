@@ -44,7 +44,7 @@ function Home() {
         </div>
       </section>
       <footer className='bg-[#333] text-white p-4 text-center h-full'>
-        <p>&copy; 2023 Careers24. All rights reserved.</p>
+        <p>&copy; 2023 GirlCode Careers. All rights reserved.</p>
       </footer>
     </div>
   );

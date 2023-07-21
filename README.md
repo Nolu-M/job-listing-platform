@@ -11,3 +11,4 @@ Inspiration for the design was taken from https://www.careers24.com/
 ## Deployed website
 
 https://girlcode-careers.onrender.com
+https://girlcode-careers-api.onrender.com/
