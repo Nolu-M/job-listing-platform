@@ -9,11 +9,9 @@ export default {
       fontFamily: {
         'primary': ['Poppins', 'sans-serif']
       },
-      colors: {
-        'girlcode-pink': "#e94154"
-      },
       backgroundImage: {
         'hero-section': "url('/src/assets/back.jpg')",
+        'login-section': "url('/src/assets/building.jpg')",
       },
     },
   },

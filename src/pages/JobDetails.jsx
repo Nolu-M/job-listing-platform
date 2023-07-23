@@ -50,7 +50,9 @@ const Information = () => {
                     <li>{jobInfo.job_location}</li>
                     <li>R{jobInfo.salary}</li>
                   </ul>
-                  <button className='btn btn-primary w-full my-4'>Apply</button>
+                    <Link to='/login'>
+                      <button className='btn btn-primary w-full my-4'>Apply</button>
+                    </Link>
                     <hr />
                   <div className='mt-4 leading-8'>
                     <h2 className='font-bold mb-4'>Vacancy Details</h2>
@@ -67,7 +69,9 @@ const Information = () => {
                       <a href=""><span className="material-symbols-outlined">favorite</span></a>
                     </div>
                   </div>
-                    <button className='btn btn-primary w-full my-4'>Apply</button>
+                    <Link to='/login'>
+                      <button className='btn btn-primary w-full my-4'>Apply</button>
+                    </Link>
                   </div>
                 </div>
             </div>

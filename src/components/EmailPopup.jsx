@@ -19,7 +19,7 @@ const EmailPopup = (props) => {
         })
   
     }
-    
+
 
   return (props.trigger) ? (
     
