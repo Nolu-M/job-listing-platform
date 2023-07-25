@@ -1,5 +1,7 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import MainLayout from '../Layouts/MainLayout'
+
+
 
 
 const Login = () => {
@@ -21,12 +23,13 @@ const Login = () => {
                         <p className='text-white'>By accessing GirlCode Careers you agree to our terms of service and <br/>privacy policy.</p>
                     <button className='btn btn-primary w-2/5 my-4'>LOG IN</button>
                         <p className='text-white'>Don't have an account</p>
+                    <Link to='/sign-up'>
                     <button className='btn border-2 text-white hover:border-[#007bff] hover:bg-white hover:text-[#333] w-2/5 my-4'>SIGN UP</button>
+                    </Link>
                 </form>
                 </div>
             </section>
         </div>
-
     </MainLayout>
   )
 }
