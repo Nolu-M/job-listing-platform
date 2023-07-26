@@ -10,7 +10,7 @@ export default {
         'primary': ['Poppins', 'sans-serif']
       },
       backgroundImage: {
-        'hero-section': "url('/src/assets/back.jpg')",
+        'hero-section': "url('/src/assets/Back.jpg')",
         'login-section': "url('/src/assets/building.jpg')",
       },
     },
