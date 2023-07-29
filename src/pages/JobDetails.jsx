@@ -50,7 +50,7 @@ const Information = () => {
                     <li>{jobInfo.job_location}</li>
                     <li>R{jobInfo.salary}</li>
                   </ul>
-                    <Link to='/login'>
+                    <Link to='/apply'>
                       <button className='btn btn-primary w-full my-4'>Apply</button>
                     </Link>
                     <hr />
