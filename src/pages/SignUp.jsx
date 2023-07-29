@@ -21,27 +21,27 @@ const SignUp = () => {
                             <input type="text" placeholder='Password' className='m-4 p-6 border-2 w-1/2' required/>
                                 <p>Passwords must be at least 10 characters long with an UPPERCASE, lower case, number and special character.</p>
                         </div>
-                        <div>
+                        <div className='mt-8'>
                             <h2>I am currently</h2>
-                                <div>
-                                    <label>
+                                <div className='mt-8 mb-8'>
+                                    <label className='btn-sign btn-checked'>
                                         <input type="radio" value='Employed' name='CurrentJobSeekersStatus' id='CurrentJobSeekerStatus' checked='checked' data-val='true' 
                                         data-val-required='The CurrentJobSeekersStatus field is required'/>Employed
                                     </label>
-                                    <label>
+                                    <label className='btn-sign btn-unchecked'>
                                         <input type="radio" value='Unemployed' name='CurrentJobSeekersStatus' id='CurrentJobSeekerStatus'/>Unemployed
                                     </label>
-                                    <label>
+                                    <label className='btn-sign btn-unchecked'>
                                         <input type="radio" value='FirstTimeJobSeeker' name='CurrentJobSeekersStatus' id='CurrentJobSeekerStatus'/>First Time Job Seeker
                                     </label>
                                 </div>
                             <h2>Do you have work experience? *</h2>
-                                <div>
-                                    <label>
+                                <div className='mt-8 mb-8'>
+                                    <label className='btn-sign btn-unchecked'>
                                         <input type="radio" value='true' name='HasWorkExperience' id='CurrentJobSeekerStatus' checked='checked' data-val='true' 
                                         data-val-required='The HasWorkExperience field is required'data-activation='c24radio'/>Yes
                                     </label>
-                                    <label>
+                                    <label className='btn-sign btn-checked'>
                                         <input type="radio" value='No' name='HasWorkExperience' id='HasWorkExperience' checked='checked'
                                         data-activation='c24radio'/>No
                                     </label>
