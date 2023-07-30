@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { Link, useParams } from 'react-router-dom'
 import MainLayout from '../Layouts/MainLayout'
+import LoginButton from '../components/LoginButton'
+
+
 
 
 const Information = () => {
@@ -50,7 +53,7 @@ const Information = () => {
                     <li>{jobInfo.job_location}</li>
                     <li>R{jobInfo.salary}</li>
                   </ul>
-                    <Link to='/apply'>
+                    <Link to={LoginButton}>
                       <button className='btn btn-primary w-full my-4'>Apply</button>
                     </Link>
                     <hr />
@@ -69,7 +72,7 @@ const Information = () => {
                       <a href=""><span className="material-symbols-outlined">favorite</span></a>
                     </div>
                   </div>
-                    <Link to='/login'>
+                    <Link to={LoginButton}>
                       <button className='btn btn-primary w-full my-4'>Apply</button>
                     </Link>
                   </div>
