@@ -93,9 +93,9 @@ const JobListingForm = () => {
             onChange={e => setRequirements(e.target.value)}
             />
         </div>
-        <button
+        <button 
           type="submit"
-          className="button"
+          className="button mt-4"
         >
           Submit
         </button>

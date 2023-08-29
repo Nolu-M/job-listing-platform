@@ -38,7 +38,7 @@ const Information = () => {
     <MainLayout>
     <div className='container mx-auto'>
       <div className='flex justify-center'>
-          <div className='w-6/12 brd'>
+          <div className='w-9/12 brd'>
             <div className='relative p-4'>
               <div className='flex justify-end mt-4'>
                 <div className=''>

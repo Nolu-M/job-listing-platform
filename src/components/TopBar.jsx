@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import HomeLogo from '../assets/Home.ico'
 import Profile from "./Profile"
-import Logout from './Logout'
 import LoginButton from './LoginButton'
 import { Dropdown } from 'rsuite'
 import AdminIcon from '@rsuite/icons/Admin';
@@ -29,7 +28,6 @@ const TopBar = () => {
               <LoginButton/>
             </DropdownItem>
             <DropdownItem>
-              <Logout/>
             </DropdownItem>
           </Dropdown>
         </div>
